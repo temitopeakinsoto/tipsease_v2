@@ -213,3 +213,7 @@ h4 {
 .active {
   border-bottom: 2px dotted gray;
 }
+
+.login-container {
+  border: 1px solid black;
+}

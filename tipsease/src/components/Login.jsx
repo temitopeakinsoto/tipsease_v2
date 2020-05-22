@@ -4,6 +4,7 @@ import axios from "axios";
 import * as yup from "yup";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import '../App.css'
 
 // COMPONENTS
 
@@ -16,35 +17,15 @@ import { connect } from "react-redux";
 
 const initialValuesLogin = {
   username: "",
-  password: ""
+  password: "",
 };
 
-const loginEndpoint =
- "https://build-tipsease.herokuapp.com/auth/users/login";
+const loginEndpoint = "https://build-tipsease.herokuapp.com/auth/users/login";
 
 const validationSchema = yup.object().shape({
-  username: yup
-    .string()
-    .required()
-    .min(2, "Too short"),
-  password: yup.string().required()
+  username: yup.string().required().min(2, "Too short"),
+  password: yup.string().required(),
 });
-
-const StyledForm = styled(Form)`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  margin: 50px auto 0;
-  label {
-    font-size: 2rem;
-  }
-  input {
-    font-size: 3rem;
-    margin: 0.5rem;
-    padding: 0.75rem;
-  }
-`;
 
 function Login({
   getCurrentUser,
@@ -54,7 +35,7 @@ function Login({
   loginError,
   setError,
   clearError,
-  error
+  error,
 }) {
   useEffect(() => {
     resetTipSuccess();
@@ -65,15 +46,15 @@ function Login({
       .post(loginEndpoint, {
         username: values.username,
         password: values.password,
-        isServiceWorker: false
+        isServiceWorker: false,
       })
-      .then(res => {
+      .then((res) => {
         clearError();
         localStorage.setItem("authorization", res.data.token);
         getCurrentUser(res.data.userInfo);
         history.push("/app/home");
       })
-      .catch(error => {
+      .catch((error) => {
         activateErrorLogin();
         action.resetForm();
         setError(error.response.data.message);
@@ -91,19 +72,24 @@ function Login({
         validationSchema={validationSchema}
         initialValues={initialValuesLogin}
         onSubmit={onLoginFormSubmission}
-        render={props => {
+        render={(props) => {
           return (
-            <StyledForm>
-              <label htmlFor="name">username:</label>
-              <Field name="username" type="text" id="name" />
-              <ErrorMessage name="username" component="div" />
-              <label htmlFor="password">password:</label>
-              <Field name="password" type="password" id="password" />
-              <ErrorMessage name="password" component="div" />
-              <button type="submit" className="action-button-big">
-                Login
-              </button>
-            </StyledForm>
+            <div className="login-container">
+              <form>
+                <label htmlFor="name">username:</label>
+                <Field name="username" type="text" id="name" />
+                <ErrorMessage name="username" component="div" />
+                <label htmlFor="password">password:</label>
+                <Field name="password" type="password" id="password" />
+                <ErrorMessage name="password" component="div" />
+                <button type="submit" className="action-button-big">
+                  Login
+                </button>
+              </form>
+              <div className="login-banner">
+
+              </div>
+            </div>
           );
         }}
       />
@@ -117,7 +103,4 @@ function Login({
   );
 }
 
-export default connect(
-  state => state,
-  actionCreators
-)(Login);
+export default connect((state) => state, actionCreators)(Login);
