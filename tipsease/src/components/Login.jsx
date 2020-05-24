@@ -4,7 +4,7 @@ import axios from "axios";
 import * as yup from "yup";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import '../App.css'
+import "../App.css";
 
 // COMPONENTS
 
@@ -62,12 +62,12 @@ function Login({
   };
   return (
     <>
-      <Title />
+      {/* <Title />
       {error[0] ? (
         <section>
           <h2>{error[1]}. Please try again.</h2>
         </section>
-      ) : null}
+      ) : null} */}
       <Formik
         validationSchema={validationSchema}
         initialValues={initialValuesLogin}
@@ -75,30 +75,44 @@ function Login({
         render={(props) => {
           return (
             <div className="login-container">
-              <form>
-                <label htmlFor="name">username:</label>
-                <Field name="username" type="text" id="name" />
-                <ErrorMessage name="username" component="div" />
-                <label htmlFor="password">password:</label>
-                <Field name="password" type="password" id="password" />
-                <ErrorMessage name="password" component="div" />
-                <button type="submit" className="action-button-big">
-                  Login
-                </button>
-              </form>
-              <div className="login-banner">
-
+              <div className="login-wrapper">
+                <form className="login-form">
+                  <div>
+                    <img src="" alt="" />
+                    Welcome Back! Please Login to your account
+                  </div>
+                  <label htmlFor="name">username:</label>
+                  <Field name="username" type="text" id="name" />
+                  <ErrorMessage name="username" component="div" />
+                  <label htmlFor="password">password:</label>
+                  <Field name="password" type="password" id="password" />
+                  <ErrorMessage name="password" component="div" />
+                  <button type="submit">Login</button>
+                </form>
+                <div className="login-banner">
+                  <div className="login-inner-wrapper">
+                    <div className="login-welcome">
+                      <h1>Welcome to tipsease </h1>
+                      <p>
+                        An application for giving tips to your favourite
+                        attendants. An application for giving tips to your
+                        favourite attendants.
+                        An application for giving tips to your favourite
+                        attendants. An application for giving tips to your
+                        favourite attendants.
+                        An application for giving tips to your favourite
+                        attendants. An application for giving tips to your
+                        favourite attendants.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           );
         }}
       />
-      <section>
-        <p>
-          If you are not registered, please sign up{" "}
-          <Link to="/register">here</Link>
-        </p>
-      </section>
+      {/*  */}
     </>
   );
 }
