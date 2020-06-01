@@ -75,21 +75,40 @@ function Login({
         render={(props) => {
           return (
             <div className="login-container">
-              {/* <div className="login-wrapper"> */}
-                <form className="login-form">
-                  <div>
-                    <img src="" alt="" />
-                    Welcome Back! Please Login to your account
-                  </div>
-                  <label htmlFor="name">username:</label>
-                  <Field name="username" type="text" id="name" />
-                  <ErrorMessage name="username" component="div" />
-                  <label htmlFor="password">password:</label>
-                  <Field name="password" type="password" id="password" />
-                  <ErrorMessage name="password" component="div" />
-                  <button type="submit">Login</button>
-                </form>
-              {/* </div> */}
+              <form className="login-form">
+                {/* <div> */}
+                <img src="" alt="" />
+                <h3>LOGIN</h3>
+                {/* </div> */}
+                <div className="input-box">
+                  <label className="label" htmlFor="name">
+                    Username:
+                  </label>
+                  <Field
+                    className="input"
+                    name="username"
+                    type="text"
+                    id="name"
+                  />
+                </div>
+                <ErrorMessage name="username" component="div" />
+                <div className="input-box">
+                  <label className="label" htmlFor="password">
+                    Password:
+                  </label>
+                  <Field
+                    className="input"
+                    name="password"
+                    type="password"
+                    id="password"
+                  />
+                </div>
+                <ErrorMessage name="password" component="div" />
+                Don't have an account? <Link to="">Signup</Link> here
+                <button type="submit" id="submit-btn">
+                  Login
+                </button>
+              </form>
             </div>
           );
         }}
