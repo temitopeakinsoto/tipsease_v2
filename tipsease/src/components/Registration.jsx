@@ -32,36 +32,6 @@ const validationSchema = yup.object().shape({
 const userRegEndpoint =
   "https://build-tipsease.herokuapp.com/auth/users/register";
 
-// const StyledForm = styled(Form)`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-start;
-//   width: 50%;
-//   margin: 20px auto 0;
-//   .input-group {
-//     display: flex;
-//     flex-direction: row;
-//     height: 75px;
-//     margin-bottom: 20px;
-//     align-items: center;
-//     width: 750px;
-//     label {
-//       font-size: 2rem;
-//       width: 30%;
-//     }
-//     .field-group {
-//       height: 50px;
-//       width: 400px;
-//       width: 70%;
-//       input {
-//         padding: 0.75rem;
-//         font-size: 1rem;
-//         width: 100%;
-//       }
-//     }
-//   }
-// `;
-
 function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
   useEffect(() => {
     clearError();
@@ -97,33 +67,48 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
         render={(props) => {
           return (
             <div className="login-container">
-            <form className="login-form">
-              <div className="input-box">
-                <label className="label" htmlFor="fullName">Full Name:</label>
-                <Field name="fullName" type="text" id="fullName" />
-                <ErrorMessage name="fullName" component="div" />
-              </div>
+              <form className="login-form">
+                <img src="" alt="" />
+                <h3>REGISTER</h3>
+                <div className="input-box">
+                  <label className="label" htmlFor="fullName">
+                    Full Name:
+                  </label>
+                  <Field name="fullName" type="text" id="fullName" />
+                  <ErrorMessage name="fullName" component="div" />
+                </div>
 
-              <div className="input-box">
-                <label className="label" htmlFor="password">Password</label>
-                <Field name="password" type="password" id="password" />
-                <ErrorMessage name="password" component="div" />
-              </div>
-              <div className="input-box">
-                <label className="label" htmlFor="username">Username</label>
+                <div className="input-box">
+                  <label className="label" htmlFor="password">
+                    Password
+                  </label>
+                  <Field name="password" type="password" id="password" />
+                  <ErrorMessage name="password" component="div" />
+                </div>
+                <div className="input-box">
+                  <label className="label" htmlFor="username">
+                    Username
+                  </label>
 
-                <Field name="username" type="text" id="username" />
-                <ErrorMessage name="username" component="div" />
-              </div>
-              <div className="input-box">
-                <label className="label" htmlFor="photoUrl">Photo URL</label>
+                  <Field name="username" type="text" id="username" />
+                  <ErrorMessage name="username" component="div" />
+                </div>
+                <div className="input-box">
+                  <label className="label" htmlFor="photoUrl">
+                    Photo URL
+                  </label>
 
-                <Field name="photoUrl" type="text" id="photoUrl" />
-                <ErrorMessage name="photoUrl" component="div" />
-              </div>
-              <button type="submit" id="submit-btn">REGISTER</button>
-            <p>If you are already registered, you can Login{" "} <Link to="/login">HERE</Link></p>
-            </form>
+                  <Field name="photoUrl" type="text" id="photoUrl" />
+                  <ErrorMessage name="photoUrl" component="div" />
+                </div>
+                <button type="submit" id="submit-btn">
+                  register
+                </button>
+                <p>
+                  If you are already registered, you can Login{" "}
+                  <Link to="/login">Here</Link>
+                </p>
+              </form>
             </div>
           );
         }}

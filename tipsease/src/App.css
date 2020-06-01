@@ -170,11 +170,6 @@ table {
   align-content: center;
 }
 
-.registration-form button {
-  width: 50px;
-  margin: auto;
-}
-
 h1 {
   font-size: 4rem;
   padding: 1rem;
@@ -211,7 +206,7 @@ h4 {
   background-color: white;
   border: 0.5px solid lightgray;
   margin: auto;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 1rem 2rem;
 
 }
 
@@ -225,9 +220,10 @@ label {
 
 #submit-btn {
   background-color: rgb(81, 147, 247);
-  margin: 2rem auto;
-  width: 90%;
+  margin: 1rem auto;
+  width: 80%;
   border: 1px solid lightgray;
+  font-weight: bold;
   cursor: pointer;
 }
 

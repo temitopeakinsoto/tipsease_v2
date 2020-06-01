@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import axios from "axios";
 import * as yup from "yup";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 import "../App.css";
 
@@ -102,10 +101,10 @@ function Login({
                   />
                 </div>
                 <ErrorMessage name="password" component="div" />
-                <p>Don't have an account? <Link to="/register">Signup</Link> here</p>
                 <button type="submit" id="submit-btn">
                   Login
                 </button>
+                <p>Don't have an account? <Link to="/register">Signup</Link> Here</p>
               </form>
             </div>
           );
