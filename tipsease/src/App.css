@@ -207,43 +207,24 @@ h4 {
   display: flex;  
   width: 70%;
   height: 70%;
-  box-shadow: 1px 3px 14px 7px blanchedalmond;
   margin: auto;
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 40%;
 }
 
 .login-form input {
   height: 3rem;
   width: 70%;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   border-radius: 4px;
 }
 
-.login-banner {
-  border: 1px solid black;
-  width: 60%;
-  background-image: url(./images/bar3.jfif);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-}
-
-.login-inner-wrapper {
-  border: 1px solid red;
-  /* height: 100%; */
-  margin: auto;
-  background-color: rgba(102, 143, 143, 0.4);
-}
-
 .login-welcome {
-  border: 1px solid black;
   width: 80%;
   text-align: left;
   margin: auto;

@@ -89,24 +89,6 @@ function Login({
                   <ErrorMessage name="password" component="div" />
                   <button type="submit">Login</button>
                 </form>
-                <div className="login-banner">
-                  <div className="login-inner-wrapper">
-                    <div className="login-welcome">
-                      <h1>Welcome to tipsease </h1>
-                      <p>
-                        An application for giving tips to your favourite
-                        attendants. An application for giving tips to your
-                        favourite attendants.
-                        An application for giving tips to your favourite
-                        attendants. An application for giving tips to your
-                        favourite attendants.
-                        An application for giving tips to your favourite
-                        attendants. An application for giving tips to your
-                        favourite attendants.
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           );
