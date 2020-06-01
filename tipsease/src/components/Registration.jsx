@@ -4,7 +4,6 @@ import axios from "axios";
 import "../App.css";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
-import styled from "styled-components";
 
 // COMPONENTS
 
@@ -75,7 +74,7 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                     Full Name:
                   </label>
                   <Field name="fullName" type="text" id="fullName" />
-                  <ErrorMessage name="fullName" component="div" />
+                  <ErrorMessage style={{color: "red"}} name="fullName" component="div" />
                 </div>
 
                 <div className="input-box">
@@ -83,7 +82,7 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                     Password
                   </label>
                   <Field name="password" type="password" id="password" />
-                  <ErrorMessage name="password" component="div" />
+                  <ErrorMessage style={{color: "red"}} name="password" component="div" />
                 </div>
                 <div className="input-box">
                   <label className="label" htmlFor="username">
@@ -91,7 +90,7 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                   </label>
 
                   <Field name="username" type="text" id="username" />
-                  <ErrorMessage name="username" component="div" />
+                  <ErrorMessage style={{color: "red"}} name="username" component="div" />
                 </div>
                 <div className="input-box">
                   <label className="label" htmlFor="photoUrl">
@@ -99,7 +98,7 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                   </label>
 
                   <Field name="photoUrl" type="text" id="photoUrl" />
-                  <ErrorMessage name="photoUrl" component="div" />
+                  <ErrorMessage style={{color: "red"}} name="photoUrl" component="div" />
                 </div>
                 <button type="submit" id="submit-btn">
                   register

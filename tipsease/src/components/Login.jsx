@@ -88,7 +88,7 @@ function Login({
                     id="name"
                   />
                 </div>
-                <ErrorMessage name="username" component="div" />
+                <ErrorMessage style={{color: "red"}} name="username" component="div" />
                 <div className="input-box">
                   <label className="label" htmlFor="password">
                     Password:
@@ -100,7 +100,7 @@ function Login({
                     id="password"
                   />
                 </div>
-                <ErrorMessage name="password" component="div" />
+                <ErrorMessage style={{color: "red"}} name="password" component="div" />
                 <button type="submit" id="submit-btn">
                   Login
                 </button>
