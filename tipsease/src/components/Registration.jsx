@@ -99,40 +99,35 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
             <div className="login-container">
             <form className="login-form">
               <div className="input-box">
-                <label htmlFor="fullName">Full Name:</label>
+                <label className="label" htmlFor="fullName">Full Name:</label>
                 <Field name="fullName" type="text" id="fullName" />
                 <ErrorMessage name="fullName" component="div" />
               </div>
 
               <div className="input-box">
-                <label htmlFor="password">Password:</label>
+                <label className="label" htmlFor="password">Password</label>
                 <Field name="password" type="password" id="password" />
                 <ErrorMessage name="password" component="div" />
               </div>
               <div className="input-box">
-                <label htmlFor="username">User Name:</label>
+                <label className="label" htmlFor="username">Username</label>
 
                 <Field name="username" type="text" id="username" />
                 <ErrorMessage name="username" component="div" />
               </div>
               <div className="input-box">
-                <label htmlFor="photoUrl">Photo URL:</label>
+                <label className="label" htmlFor="photoUrl">Photo URL</label>
 
                 <Field name="photoUrl" type="text" id="photoUrl" />
                 <ErrorMessage name="photoUrl" component="div" />
               </div>
-              <button type="submit">Sign Up</button>
+              <button type="submit" id="submit-btn">REGISTER</button>
+            <p>If you are already registered, you can Login{" "} <Link to="/login">HERE</Link></p>
             </form>
             </div>
           );
         }}
       />
-      <section>
-        <p>
-          If you are already registered, you can sign in{" "}
-          <Link to="/login">here</Link>
-        </p>
-      </section>
     </>
   );
 }

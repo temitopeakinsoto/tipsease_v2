@@ -102,7 +102,7 @@ function Login({
                   />
                 </div>
                 <ErrorMessage name="password" component="div" />
-                <p>Don't have an account? <Link to="">Signup</Link> here</p>
+                <p>Don't have an account? <Link to="/register">Signup</Link> here</p>
                 <button type="submit" id="submit-btn">
                   Login
                 </button>
