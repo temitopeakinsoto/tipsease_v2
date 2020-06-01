@@ -228,6 +228,7 @@ label {
   margin: 2rem auto;
   width: 90%;
   border: 1px solid lightgray;
+  cursor: pointer;
 }
 
 .login-form p {

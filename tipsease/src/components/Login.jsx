@@ -76,10 +76,8 @@ function Login({
           return (
             <div className="login-container">
               <form className="login-form">
-                {/* <div> */}
                 <img src="" alt="" />
                 <h3>LOGIN</h3>
-                {/* </div> */}
                 <div className="input-box">
                   <label className="label" htmlFor="name">
                     Username:
