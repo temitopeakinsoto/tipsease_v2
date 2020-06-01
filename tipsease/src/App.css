@@ -253,7 +253,7 @@ label {
   margin-bottom: 8px;
 }
 
-.login-welcome h1,p {
+.login-welcome h3, p {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
