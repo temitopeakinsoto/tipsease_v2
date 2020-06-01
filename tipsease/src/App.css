@@ -203,18 +203,23 @@ h4 {
   display: flex;
 }
 
-.login-wrapper {
+/* .login-wrapper {
   display: flex;  
   width: 70%;
   height: 70%;
   margin: auto;
-}
+  border: 1px solid black;
+} */
 
 .login-form {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
+  background-color: white;
+  /* border: 1px solid gray; */
   width: 40%;
+  margin: auto;
+  padding: 7rem 4rem;
+
 }
 
 .login-form input {

@@ -75,7 +75,7 @@ function Login({
         render={(props) => {
           return (
             <div className="login-container">
-              <div className="login-wrapper">
+              {/* <div className="login-wrapper"> */}
                 <form className="login-form">
                   <div>
                     <img src="" alt="" />
@@ -89,7 +89,7 @@ function Login({
                   <ErrorMessage name="password" component="div" />
                   <button type="submit">Login</button>
                 </form>
-              </div>
+              {/* </div> */}
             </div>
           );
         }}
