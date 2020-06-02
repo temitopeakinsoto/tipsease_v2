@@ -74,7 +74,7 @@ function Login({
         render={(props) => {
           return (
             <div className="login-container">
-              <form className="login-form">
+              <Form className="login-form">
                 <img src="" alt="" />
                 <h2 style={{ color: "rgb(81, 147, 247)" }}>LOGIN</h2>
                 <div className="input-box">
@@ -107,13 +107,13 @@ function Login({
                   name="password"
                   component="div"
                 />
-                <button onClick={onLoginFormSubmission} type="submit" id="submit-btn">
+                <button type="submit" id="submit-btn">
                   Login
                 </button>
                 <p>
                   Don't have an account? <Link to="/register">Signup</Link> Here
                 </p>
-              </form>
+              </Form>
             </div>
           );
         }}

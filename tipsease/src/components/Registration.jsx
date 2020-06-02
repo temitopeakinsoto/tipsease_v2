@@ -66,7 +66,7 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
         render={(props) => {
           return (
             <div className="login-container">
-              <form className="login-form">
+              <Form className="login-form">
                 <img src="" alt="" />
                 <h2 style={{ color: "rgb(81, 147, 247)" }}>REGISTER</h2>
                 <div className="input-box">
@@ -133,7 +133,7 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                   If you are already registered, you can{" "}
                   <Link to="/login">Login </Link>{" "}
                 </p>
-              </form>
+              </Form>
             </div>
           );
         }}
