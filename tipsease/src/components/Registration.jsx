@@ -77,12 +77,12 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                     id="fullName"
                     placeHolder="Enter your full name"
                   />
+                </div>
                   <ErrorMessage
                     style={{ color: "red" }}
                     name="fullName"
                     component="div"
                   />
-                </div>
 
                 <div className="input-box">
                   <img src={lock} alt="" />
@@ -92,12 +92,12 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                     id="password"
                     placeHolder="Enter your password"
                   />
-                  <ErrorMessage
-                    style={{ color: "red" }}
-                    name="password"
-                    component="div"
-                  />
                 </div>
+                <ErrorMessage
+                  style={{ color: "red" }}
+                  name="password"
+                  component="div"
+                />
                 <div className="input-box">
                   <img src={user} alt="" />
                   <Field
@@ -106,12 +106,12 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                     id="username"
                     placeHolder="Enter your username"
                   />
-                  <ErrorMessage
-                    style={{ color: "red" }}
-                    name="username"
-                    component="div"
-                  />
                 </div>
+                <ErrorMessage
+                  style={{ color: "red" }}
+                  name="username"
+                  component="div"
+                />
                 <div className="input-box">
                   <img src={photourl} alt="" />
                   <Field
@@ -120,12 +120,12 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                     id="photoUrl"
                     placeHolder="Enter photo url"
                   />
-                  <ErrorMessage
-                    style={{ color: "red" }}
-                    name="photoUrl"
-                    component="div"
-                  />
                 </div>
+                <ErrorMessage
+                  style={{ color: "red" }}
+                  name="photoUrl"
+                  component="div"
+                />
                 <button type="submit" id="submit-btn">
                   Register
                 </button>

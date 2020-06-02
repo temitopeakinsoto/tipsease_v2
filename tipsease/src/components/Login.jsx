@@ -4,8 +4,8 @@ import axios from "axios";
 import * as yup from "yup";
 import { Link } from "react-router-dom";
 import "../App.css";
-import lock from "../images/lock.png"
-import user from "../images/user.png"
+import lock from "../images/lock.png";
+import user from "../images/user.png";
 
 // COMPONENTS
 
@@ -78,9 +78,9 @@ function Login({
             <div className="login-container">
               <form className="login-form">
                 <img src="" alt="" />
-                <h2 style={{color: "rgb(81, 147, 247)"}}>LOGIN</h2>
+                <h2 style={{ color: "rgb(81, 147, 247)" }}>LOGIN</h2>
                 <div className="input-box">
-                <img src={user} alt=""/>
+                  <img src={user} alt="" />
                   <Field
                     className="input"
                     name="username"
@@ -89,9 +89,13 @@ function Login({
                     placeHolder="Username"
                   />
                 </div>
-                <ErrorMessage style={{color: "red"}} name="username" component="div" />
+                <ErrorMessage
+                  style={{ color: "red" }}
+                  name="username"
+                  component="div"
+                />
                 <div className="input-box">
-                <img src={lock} alt=""/>
+                  <img src={lock} alt="" />
                   <Field
                     className="input"
                     name="password"
@@ -100,12 +104,17 @@ function Login({
                     placeHolder="*********"
                   />
                 </div>
-                <ErrorMessage style={{color: "red"}} name="password" component="div" />
+                <ErrorMessage
+                  style={{ color: "red" }}
+                  name="password"
+                  component="div"
+                />
                 <button type="submit" id="submit-btn">
                   Login
                 </button>
-                <p>Don't have an account? <Link to="/register">Signup</Link> Here</p>
-                
+                <p>
+                  Don't have an account? <Link to="/register">Signup</Link> Here
+                </p>
               </form>
             </div>
           );
