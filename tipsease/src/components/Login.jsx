@@ -4,6 +4,8 @@ import axios from "axios";
 import * as yup from "yup";
 import { Link } from "react-router-dom";
 import "../App.css";
+import lock from "../images/lock.png"
+import user from "../images/user.png"
 
 // COMPONENTS
 
@@ -78,6 +80,7 @@ function Login({
                 <img src="" alt="" />
                 <h2 style={{color: "rgb(81, 147, 247)"}}>LOGIN</h2>
                 <div className="input-box">
+                <img src={user} alt=""/>
                   <Field
                     className="input"
                     name="username"
@@ -88,6 +91,7 @@ function Login({
                 </div>
                 <ErrorMessage style={{color: "red"}} name="username" component="div" />
                 <div className="input-box">
+                <img src={lock} alt=""/>
                   <Field
                     className="input"
                     name="password"

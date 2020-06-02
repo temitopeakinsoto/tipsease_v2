@@ -220,9 +220,15 @@ input {
 
 .input-box {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+.input-box img {
+ width: 12px;
+ padding-bottom: 7px;
+ margin-right: 5px;
 }
 
 label {

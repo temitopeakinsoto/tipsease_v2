@@ -5,12 +5,12 @@ import "../App.css";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
 
-// COMPONENTS
-
-import Title from "./Title";
+import lock from "../images/lock.png";
+import user from "../images/user.png";
+import photourl from "../images/photourl.png";
+import fullname from "../images/fullname.png";
 
 // STATE
-
 import * as actionCreators from "../state/actionCreators";
 import { connect } from "react-redux";
 
@@ -68,43 +68,71 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
             <div className="login-container">
               <form className="login-form">
                 <img src="" alt="" />
-                <h2 style={{color: "rgb(81, 147, 247)"}}>REGISTER</h2>
+                <h2 style={{ color: "rgb(81, 147, 247)" }}>REGISTER</h2>
                 <div className="input-box">
-                  {/* <label className="label" htmlFor="fullName">
-                    Full Name:
-                  </label> */}
-                  <Field name="fullName" type="text" id="fullName" placeHolder="Enter your full name"/>
-                  <ErrorMessage style={{color: "red"}} name="fullName" component="div" />
+                  <img src={fullname} alt="" />
+                  <Field
+                    name="fullName"
+                    type="text"
+                    id="fullName"
+                    placeHolder="Enter your full name"
+                  />
+                  <ErrorMessage
+                    style={{ color: "red" }}
+                    name="fullName"
+                    component="div"
+                  />
                 </div>
 
                 <div className="input-box">
-                  {/* <label className="label" htmlFor="password">
-                    Password
-                  </label> */}
-                  <Field name="password" type="password" id="password" placeHolder="Enter your password"/>
-                  <ErrorMessage style={{color: "red"}} name="password" component="div" />
+                  <img src={lock} alt="" />
+                  <Field
+                    name="password"
+                    type="password"
+                    id="password"
+                    placeHolder="Enter your password"
+                  />
+                  <ErrorMessage
+                    style={{ color: "red" }}
+                    name="password"
+                    component="div"
+                  />
                 </div>
                 <div className="input-box">
-                  {/* <label className="label" htmlFor="username">
-                    Username
-                  </label> */}
-
-                  <Field name="username" type="text" id="username" placeHolder="Enter your username"/>
-                  <ErrorMessage style={{color: "red"}} name="username" component="div" />
+                  <img src={user} alt="" />
+                  <Field
+                    name="username"
+                    type="text"
+                    id="username"
+                    placeHolder="Enter your username"
+                  />
+                  <ErrorMessage
+                    style={{ color: "red" }}
+                    name="username"
+                    component="div"
+                  />
                 </div>
                 <div className="input-box">
-                  {/* <label className="label" htmlFor="photoUrl">
-                    Photo URL
-                  </label> */}
-
-                  <Field name="photoUrl" type="text" id="photoUrl" placeHolder="photo url"/>
-                  <ErrorMessage style={{color: "red"}} name="photoUrl" component="div" />
+                  <img src={photourl} alt="" />
+                  <Field
+                    name="photoUrl"
+                    type="text"
+                    id="photoUrl"
+                    placeHolder="Enter photo url"
+                  />
+                  <ErrorMessage
+                    style={{ color: "red" }}
+                    name="photoUrl"
+                    component="div"
+                  />
                 </div>
                 <button type="submit" id="submit-btn">
                   Register
                 </button>
                 <p>
-                  If you are already registered, you can <Link to="/login">Login </Link> </p>
+                  If you are already registered, you can{" "}
+                  <Link to="/login">Login </Link>{" "}
+                </p>
               </form>
             </div>
           );
