@@ -95,7 +95,7 @@ function Login({
                   component="div"
                 />
                 <div className="input-box">
-                  <img src={lock} alt="" />
+                  <img style={{width: "14px"}} src={lock} alt="" />
                   <Field
                     className="input"
                     name="password"
