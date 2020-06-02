@@ -104,9 +104,7 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                   register
                 </button>
                 <p>
-                  If you are already registered, you can Login{" "}
-                  <Link to="/login">Here</Link>
-                </p>
+                  If you are already registered, you can <Link to="/login">Login</Link> </p>
               </form>
             </div>
           );
