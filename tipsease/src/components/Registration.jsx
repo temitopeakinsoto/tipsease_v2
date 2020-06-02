@@ -70,41 +70,41 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
                 <img src="" alt="" />
                 <h2 style={{color: "rgb(81, 147, 247)"}}>REGISTER</h2>
                 <div className="input-box">
-                  <label className="label" htmlFor="fullName">
+                  {/* <label className="label" htmlFor="fullName">
                     Full Name:
-                  </label>
-                  <Field name="fullName" type="text" id="fullName" />
+                  </label> */}
+                  <Field name="fullName" type="text" id="fullName" placeHolder="Enter your full name"/>
                   <ErrorMessage style={{color: "red"}} name="fullName" component="div" />
                 </div>
 
                 <div className="input-box">
-                  <label className="label" htmlFor="password">
+                  {/* <label className="label" htmlFor="password">
                     Password
-                  </label>
-                  <Field name="password" type="password" id="password" />
+                  </label> */}
+                  <Field name="password" type="password" id="password" placeHolder="Enter your password"/>
                   <ErrorMessage style={{color: "red"}} name="password" component="div" />
                 </div>
                 <div className="input-box">
-                  <label className="label" htmlFor="username">
+                  {/* <label className="label" htmlFor="username">
                     Username
-                  </label>
+                  </label> */}
 
-                  <Field name="username" type="text" id="username" />
+                  <Field name="username" type="text" id="username" placeHolder="Enter your username"/>
                   <ErrorMessage style={{color: "red"}} name="username" component="div" />
                 </div>
                 <div className="input-box">
-                  <label className="label" htmlFor="photoUrl">
+                  {/* <label className="label" htmlFor="photoUrl">
                     Photo URL
-                  </label>
+                  </label> */}
 
-                  <Field name="photoUrl" type="text" id="photoUrl" />
+                  <Field name="photoUrl" type="text" id="photoUrl" placeHolder="photo url"/>
                   <ErrorMessage style={{color: "red"}} name="photoUrl" component="div" />
                 </div>
                 <button type="submit" id="submit-btn">
-                  register
+                  Register
                 </button>
                 <p>
-                  If you are already registered, you can <Link to="/login">Login</Link> </p>
+                  If you are already registered, you can <Link to="/login">Login </Link> </p>
               </form>
             </div>
           );

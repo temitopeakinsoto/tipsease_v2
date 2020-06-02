@@ -78,26 +78,22 @@ function Login({
                 <img src="" alt="" />
                 <h2 style={{color: "rgb(81, 147, 247)"}}>LOGIN</h2>
                 <div className="input-box">
-                  <label className="label" htmlFor="name">
-                    Username:
-                  </label>
                   <Field
                     className="input"
                     name="username"
                     type="text"
                     id="name"
+                    placeHolder="Username"
                   />
                 </div>
                 <ErrorMessage style={{color: "red"}} name="username" component="div" />
                 <div className="input-box">
-                  <label className="label" htmlFor="password">
-                    Password:
-                  </label>
                   <Field
                     className="input"
                     name="password"
                     type="password"
                     id="password"
+                    placeHolder="*********"
                   />
                 </div>
                 <ErrorMessage style={{color: "red"}} name="password" component="div" />
@@ -105,6 +101,7 @@ function Login({
                   Login
                 </button>
                 <p>Don't have an account? <Link to="/register">Signup</Link> Here</p>
+                
               </form>
             </div>
           );
