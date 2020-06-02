@@ -47,9 +47,9 @@ function Login({
       })
       .then((res) => {
         console.log("our ressss is ", res.data)
-        clearError();
         localStorage.setItem("authorization", res.data.token);
         getCurrentUser(res.data.userInfo);
+        clearError();
         history.push("/app/home");
       })
       .catch((error) => {
@@ -61,12 +61,6 @@ function Login({
   };
   return (
     <>
-      {/* <Title />
-      {error[0] ? (
-        <section>
-          <h2>{error[1]}. Please try again.</h2>
-        </section>
-      ) : null} */}
       <Formik
         validationSchema={validationSchema}
         initialValues={initialValuesLogin}
@@ -107,6 +101,7 @@ function Login({
                   name="password"
                   component="div"
                 />
+                { error[0] && <p style={{color: "red"}}>{error[1]}</p> } 
                 <button type="submit" id="submit-btn">
                   Login
                 </button>
