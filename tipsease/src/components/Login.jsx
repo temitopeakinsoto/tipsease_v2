@@ -76,7 +76,7 @@ function Login({
             <div className="login-container">
               <form className="login-form">
                 <img src="" alt="" />
-                <h3>LOGIN</h3>
+                <h2 style={{color: "rgb(81, 147, 247)"}}>LOGIN</h2>
                 <div className="input-box">
                   <label className="label" htmlFor="name">
                     Username:

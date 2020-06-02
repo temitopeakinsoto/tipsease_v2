@@ -68,7 +68,7 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
             <div className="login-container">
               <form className="login-form">
                 <img src="" alt="" />
-                <h3>REGISTER</h3>
+                <h2 style={{color: "rgb(81, 147, 247)"}}>REGISTER</h2>
                 <div className="input-box">
                   <label className="label" htmlFor="fullName">
                     Full Name:
