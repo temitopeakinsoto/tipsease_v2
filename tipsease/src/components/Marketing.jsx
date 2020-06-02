@@ -33,7 +33,7 @@ export default function Marketing() {
             <button>Get Started</button>
           </div>
           <div className="banner-item">
-            <img src={homescreen} />
+            <img src={homescreen} alt=""/>
           </div>
         </section>
         <section className="service-workers">
@@ -53,16 +53,16 @@ export default function Marketing() {
                 opportunity to get tipped
               </p>
               <p>
-                <img className="feature-icons" src={car} /> Get paid by anyone,
+                <img className="feature-icons" src={car} alt="" /> Get paid by anyone,
                 anywhere, anytime
               </p>
 
               <p>
-                <img className="feature-icons" src={cash} /> Get paid faster and
+                <img className="feature-icons" src={cash} alt="" /> Get paid faster and
                 more often
               </p>
               <p>
-                <img className="feature-icons" src={smartmoney} /> Earn Bonuses
+                <img className="feature-icons" src={smartmoney} alt="" /> Earn Bonuses
                 through our Referral Incentives
               </p>
             </div>
@@ -81,26 +81,26 @@ export default function Marketing() {
             <div className="service-worker-features">
                 <div>
               <p>
-                <img className="feature-icons" src={wallet} /> Fast as paying
+                <img className="feature-icons" src={wallet} alt="" /> Fast as paying
                 with cash from a wallet or money clip
               </p>
               <p>
-                <img className="feature-icons" src={car} /> It's easy to setup,
+                <img className="feature-icons" src={car} alt="" /> It's easy to setup,
                 transact & administer for the Tipper & Tippee
               </p>
 
               <p>
-                <img className="feature-icons" src={cash} /> It's secure as a
+                <img className="feature-icons" src={cash} alt="" /> It's secure as a
                 paypal or credit card transaction
               </p>
             </div>
             <p>
-              <img className="feature-icons" src={smartmoney} /> It's anonymous
+              <img className="feature-icons" src={smartmoney} alt="" /> It's anonymous
               and there's no need to know each other
             </p>
             </div>
             <div>
-              <img src={tipsimg} />
+              <img src={tipsimg} alt="" />
             </div>
           </div>
         </section>
@@ -115,15 +115,15 @@ export default function Marketing() {
           </div>
           <div className="service-worker-content">
             <div>
-              <img src={tipsimg} />
+              <img src={tipsimg} alt="" />
             </div>
             <div className="service-worker-features">
               <p>
-                <img className="feature-icons" src={wallet} /> Never miss an
+                <img className="feature-icons" src={wallet} alt="" /> Never miss an
                 opportunity to get tipped
               </p>
               <p>
-                <img className="feature-icons" src={car} /> Get paid by anyone,
+                <img className="feature-icons" src={car} alt="" /> Get paid by anyone,
                 anywhere, anytime
               </p>
 

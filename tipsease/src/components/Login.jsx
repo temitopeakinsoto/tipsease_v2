@@ -7,12 +7,7 @@ import "../App.css";
 import lock from "../images/lock.png";
 import user from "../images/user.png";
 
-// COMPONENTS
-
-import Title from "./Title";
-
 // STATE
-
 import * as actionCreators from "../state/actionCreators";
 import { connect } from "react-redux";
 
@@ -43,6 +38,7 @@ function Login({
   }, []);
 
   const onLoginFormSubmission = (values, action) => {
+    console.log("on submit is: ", values);
     axios
       .post(loginEndpoint, {
         username: values.username,
@@ -50,12 +46,14 @@ function Login({
         isServiceWorker: false,
       })
       .then((res) => {
+        console.log("our ressss is ", res.data)
         clearError();
         localStorage.setItem("authorization", res.data.token);
         getCurrentUser(res.data.userInfo);
         history.push("/app/home");
       })
       .catch((error) => {
+        console.log("errrorrrrrrrr issssssss: ", error)
         activateErrorLogin();
         action.resetForm();
         setError(error.response.data.message);
@@ -109,7 +107,7 @@ function Login({
                   name="password"
                   component="div"
                 />
-                <button type="submit" id="submit-btn">
+                <button onClick={onLoginFormSubmission} type="submit" id="submit-btn">
                   Login
                 </button>
                 <p>
