@@ -27,8 +27,7 @@ const StyledNavBar = styled.nav`
 
 function NavBar({ history, clearCurrentUser, currentUser }) {
   // LOGOUT FUNCTIONALITY
-
-  const logout = e => {
+  const logout = (e) => {
     localStorage.clear();
     clearCurrentUser();
     history.replace("/login");
@@ -59,9 +58,4 @@ function NavBar({ history, clearCurrentUser, currentUser }) {
   );
 }
 
-export default withRouter(
-  connect(
-    state => state,
-    actionCreators
-  )(NavBar)
-);
+export default withRouter(connect((state) => state, actionCreators)(NavBar));

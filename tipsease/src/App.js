@@ -11,7 +11,6 @@ import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 
 // COMPONENTS
-
 import NavBar from "./components/NavBar";
 import Login from "./components/Login";
 import Container from "./components/Container";
@@ -23,7 +22,6 @@ import Marketing from "./components/Marketing";
 
 
 const masterReducer = combineReducers({
-  count: reducers.countReducer,
   currentUser: reducers.currentUserReducer,
   listServiceWorkers: reducers.listServiceWorkersReducer,
   tipSuccess: reducers.tipSuccessReducer,

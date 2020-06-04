@@ -1,17 +1,19 @@
 import * as types from "./actionTypes";
 import withAuth from "../axios";
 
-export function increment() {
-  return {
-    type: types.INCREMENT
-  };
-}
+const fetchServiceWorkersApi =
+"https://build-tipsease.herokuapp.com/serviceWorkers";
 
-export function decrement() {
-  return {
-    type: types.DECREMENT
-  };
-}
+export const fetchServiceWorkers = () => dispatch => {
+  withAuth()
+  .get(fetchServiceWorkersApi)
+  .then(res => {
+    dispatch(getServiceWorkers(res.data));
+  })
+  .catch(error => {
+    alert(error.message);
+  });
+};
 
 export function getCurrentUser(currentUser) {
   return {
@@ -26,21 +28,6 @@ export function getServiceWorkers(data) {
     payload: data
   };
 }
-
-const fetchServiceWorkersApi =
-  "https://build-tipsease.herokuapp.com/serviceWorkers";
-
-export const fetchServiceWorkers = () => dispatch => {
-  withAuth()
-    .get(fetchServiceWorkersApi)
-    .then(res => {
-      dispatch(getServiceWorkers(res.data));
-    })
-    .catch(error => {
-      alert(error.message);
-    });
-};
-
 // export function tipServiceWorker(amount) {
 //   return {
 

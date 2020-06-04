@@ -53,7 +53,6 @@ function Login({
         history.push("/app/home");
       })
       .catch((error) => {
-        console.log("errrorrrrrrrr issssssss: ", error)
         activateErrorLogin();
         action.resetForm();
         setError(error.response.data.message);
