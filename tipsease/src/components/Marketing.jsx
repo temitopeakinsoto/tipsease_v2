@@ -1,5 +1,5 @@
 import React from "react";
-import '../reset.css';
+import "../reset.css";
 import "../styles.css";
 import wallet from "../images/wallet.png";
 import car from "../images/car.png";
@@ -33,7 +33,7 @@ export default function Marketing() {
             <button>Get Started</button>
           </div>
           <div className="banner-item">
-            <img src={homescreen} alt=""/>
+            <img src={homescreen} alt="" />
           </div>
         </section>
         <section className="service-workers">
@@ -53,17 +53,17 @@ export default function Marketing() {
                 opportunity to get tipped
               </p>
               <p>
-                <img className="feature-icons" src={car} alt="" /> Get paid by anyone,
-                anywhere, anytime
+                <img className="feature-icons" src={car} alt="" /> Get paid by
+                anyone, anywhere, anytime
               </p>
 
               <p>
-                <img className="feature-icons" src={cash} alt="" /> Get paid faster and
-                more often
+                <img className="feature-icons" src={cash} alt="" /> Get paid
+                faster and more often
               </p>
               <p>
-                <img className="feature-icons" src={smartmoney} alt="" /> Earn Bonuses
-                through our Referral Incentives
+                <img className="feature-icons" src={smartmoney} alt="" /> Earn
+                Bonuses through our Referral Incentives
               </p>
             </div>
           </div>
@@ -79,25 +79,25 @@ export default function Marketing() {
           </div>
           <div className="service-worker-content">
             <div className="service-worker-features">
-                <div>
-              <p>
-                <img className="feature-icons" src={wallet} alt="" /> Fast as paying
-                with cash from a wallet or money clip
-              </p>
-              <p>
-                <img className="feature-icons" src={car} alt="" /> It's easy to setup,
-                transact & administer for the Tipper & Tippee
-              </p>
+              <div>
+                <p>
+                  <img className="feature-icons" src={wallet} alt="" /> Fast as
+                  paying with cash from a wallet or money clip
+                </p>
+                <p>
+                  <img className="feature-icons" src={car} alt="" /> It's easy
+                  to setup, transact & administer for the Tipper & Tippee
+                </p>
 
+                <p>
+                  <img className="feature-icons" src={cash} alt="" /> It's
+                  secure as a paypal or credit card transaction
+                </p>
+              </div>
               <p>
-                <img className="feature-icons" src={cash} alt="" /> It's secure as a
-                paypal or credit card transaction
+                <img className="feature-icons" src={smartmoney} alt="" /> It's
+                anonymous and there's no need to know each other
               </p>
-            </div>
-            <p>
-              <img className="feature-icons" src={smartmoney} alt="" /> It's anonymous
-              and there's no need to know each other
-            </p>
             </div>
             <div>
               <img src={tipsimg} alt="" />
@@ -119,12 +119,12 @@ export default function Marketing() {
             </div>
             <div className="service-worker-features">
               <p>
-                <img className="feature-icons" src={wallet} alt="" /> Never miss an
-                opportunity to get tipped
+                <img className="feature-icons" src={wallet} alt="" /> Never miss
+                an opportunity to get tipped
               </p>
               <p>
-                <img className="feature-icons" src={car} alt="" /> Get paid by anyone,
-                anywhere, anytime
+                <img className="feature-icons" src={car} alt="" /> Get paid by
+                anyone, anywhere, anytime
               </p>
 
               <p>
@@ -140,7 +140,7 @@ export default function Marketing() {
         </section>
 
         <footer className="footer">
-          <p>Copyright 2019</p>
+          <p>Copyright {new Date().getFullYear()}</p>
         </footer>
       </body>
     </div>
