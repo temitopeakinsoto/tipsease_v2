@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Route, withRouter, Redirect } from "react-router-dom";
-import styled from "styled-components";
+import { StyledApp } from './StyledComponents';
 
 // STATE MANAGEMENT
 
@@ -39,17 +39,6 @@ const store = createStore(
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );
-
-const StyledApp = styled.div`
-  display: flex;
-  flex-direction: row;
-  .navbar {
-    width: 25vw;
-  }
-  .content {
-    width: 75vw;
-  }
-`;
 
 function App(props) {
   return (
