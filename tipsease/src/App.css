@@ -240,6 +240,7 @@ label {
   font-size: 19px;
   color: white;
   background-color: rgb(81, 147, 247);
+  background-color: brown;
   margin: 1rem auto;
   width: 80%;
   border: 1px solid lightgray;
@@ -260,6 +261,10 @@ label {
 
 .login-form p {
   font-size: 16px;
+}
+
+.login-form h2 {
+  color: brown;
 }
 
 .login-welcome {
