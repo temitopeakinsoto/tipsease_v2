@@ -60,7 +60,7 @@ function App(props) {
         </StyledApp>
         <LoginRedirectRoute path="/login" component={Login} />
         <Route path="/register" component={Registration} />
-        <Route exact path="/" component={Marketing} />
+        <Route exact path="/" component={Login} />
       </Provider>
     </div>
   );
