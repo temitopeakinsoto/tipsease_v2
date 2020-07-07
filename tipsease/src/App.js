@@ -18,7 +18,7 @@ import WorkerCard from "./components/WorkerCard";
 import EditProfile from "./components/EditProfile";
 import Profile from "./components/Profile";
 import Registration from "./components/Registration";
-import Marketing from "./components/Marketing";
+// import Marketing from "./components/Marketing";
 
 
 const masterReducer = combineReducers({
