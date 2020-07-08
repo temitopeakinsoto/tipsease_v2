@@ -6,8 +6,6 @@ import car from "../images/car.png";
 import cash from "../images/cash-1.png";
 import smartmoney from "../images/smartmoney.png";
 import tipsimg from "../images/tipsease-img1.png";
-import homescreen from "../images/home-screen.png";
-
 export default function Marketing() {
   return (
     <body>

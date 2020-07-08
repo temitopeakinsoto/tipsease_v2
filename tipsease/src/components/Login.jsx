@@ -69,7 +69,7 @@ function Login({
             <div className="login-container">
               <Form className="login-form">
                 <img src="" alt="" />
-                <h2 style={{ color: "rgb(81, 147, 247)" }}>LOGIN</h2>
+                <h2 style={{fontSize: "20px", fontWeight:"bold"}}>LOGIN</h2>
                 <div className="input-box">
                   <img src={user} alt="" />
                   <Field

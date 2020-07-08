@@ -68,7 +68,7 @@ function Registration({ history, setTaskSucceded, tipSuccess, clearError }) {
             <div className="login-container">
               <Form className="login-form">
                 <img src="" alt="" />
-                <h2 style={{ color: "rgb(81, 147, 247)" }}>REGISTER</h2>
+                <h2 style={{fontSize: "20px", fontWeight:"bold"}}>REGISTER</h2>
                 <div className="input-box">
                   <img src={fullname} alt="" />
                   <Field
